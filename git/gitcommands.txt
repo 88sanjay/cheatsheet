@@ -1,0 +1,9 @@
+git add -A
+git commit -m "Commit Message"
+git push 
+
+# Remote names that refer to current repo
+git remote -v
+
+# Change origin 
+git remote set-url origin git@github.com:88sanjay/new_repo_name.git
