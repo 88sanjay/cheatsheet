@@ -1,3 +1,1 @@
-# cheetSheet
-# cheetSheet
-# cheetSheet
+# Software dev cheetsheet
