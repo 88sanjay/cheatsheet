@@ -4,5 +4,6 @@ mkdir ~/.ssh
 chmod 700 ~/.ssh
 ssh-keygen -t rsa
 
-
+## UBUNTU VERSION ##
+lsb_release -a
 
