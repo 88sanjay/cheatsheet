@@ -13,3 +13,13 @@ git remote -v
 
 # Change origin 
 git remote set-url origin git@github.com:88sanjay/new_repo_name.git
+
+# Before merge sync upstream repo
+https://help.github.com/articles/fork-a-repo/
+
+#Resolve conflicts
+https://help.github.com/articles/resolving-a-merge-conflict-from-the-command-line/
+
+# Raise pull req
+
+# Close patch
