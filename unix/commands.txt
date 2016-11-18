@@ -7,3 +7,14 @@ ssh-keygen -t rsa
 ## UBUNTU VERSION ##
 lsb_release -a
 
+
+## interesting awk scrips 
+
+# -F option to split $0 for whole line $1 onwards for columns.
+ls | awk -F'.' '{print $1".dat"}' | awk -F'_' '{
+if ($5 =="Loans")
+	print "cp "$0" /disk1/tenx/data/initial/BM/"$1"/loan" 
+else
+	print "cp "$0" /disk1/tenx/data/initial/BM/"$1"/"tolower($5) 
+}'
+
