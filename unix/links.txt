@@ -1,0 +1,2 @@
+Windows on virtual box:
+https://github.com/magnetikonline/linuxmicrosoftievirtualmachines#ie11---windows-7
