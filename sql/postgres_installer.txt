@@ -1,0 +1,23 @@
+UBUNTU
+$ sudo sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" >> /etc/apt/sources.list.d/pgdg.list'
+$ wget -q https://www.postgresql.org/media/keys/ACCC4CF8.asc -O - | sudo apt-key add -
+$ sudo apt-get update
+$ sudo apt-get install postgresql postgresql-contrib
+$ sudo su - postgres
+$ psql
+postgres-# \conninfo
+postgres-# \q
+
+
+
+WINDOWS
+https://www.enterprisedb.com/downloads/postgres-postgresql-downloads#windows
+Install PostgreSQL as a Windows Service.
+Keep track of the PostgreSQL Windows Service account name and password. LabKey Server doesn't really care what this password is set to, but we need to ask for it so that we can pass it along to the PostgreSQL installer.
+Keep track of the database superuser name and password. You'll need these to configure LabKey Server. LabKey Server uses this password to authenticate itself to PostgreSQL.
+Select the PL/pgsql procedural language for installation when prompted by the installer.
+We recommend that you install the graphical tool pgAdminIII for easy database administration. Leave the default settings as they are on the "Installation Options" page to include pgAdminIII.
+If you have chosen to install pgAdminIII, enable the Adminpack contrib module when prompted by the installer.
+Please read the notes below to forestall any difficulties with the PostgreSQL installation.
+
+
